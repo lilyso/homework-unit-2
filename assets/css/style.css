@@ -45,7 +45,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 header h1 {
@@ -89,6 +89,7 @@ header h1 {
 
 .hero-section {
   display: flex;
+  align-items: center;
 }
 
 .hero-section .hero-row {
@@ -101,8 +102,13 @@ header h1 {
 }
 
 .hero-row p {
-  padding: 20px;
+  padding: 0px 20px;
+  margin-bottom: 8px;
 }
+
+.hero-row p:last-of-type {
+    margin-bottom: 24px;
+  }
 
 .section-header {
   display: flex;
@@ -135,6 +141,25 @@ header h1 {
   color: black;
   z-index: 1;
   position: absolute;
+  white-space: nowrap;
+}
+
+.project:hover .floating a .portfolio-text {
+    background-color: black;
+    color: var(--brightcolor);
+}
+
+.skills:hover .floating a .portfolio-text {
+    background-color: black;
+    color: var(--brightcolor);
+}
+
+.skills:hover img {
+    opacity:0.8; 
+}
+
+.skills { 
+    background-color: var(--brightcolor);
 }
 
 .creative {
@@ -157,7 +182,18 @@ header h1 {
 
 .skills a {
   text-decoration: none;
+  color: black;
+  /* padding: 10px; */
 }
+
+.skills a:hover {
+    background: black;
+}
+
+.floating {
+    position: absolute;
+}
+
 .form-section form {
   padding: 20px;
 }
@@ -197,6 +233,9 @@ textarea:focus {
   margin: 0 auto;
   display: block;
   border: 0;
+  background-color: var(--brightcolor);
+  color: black;
+  border-radius: 0;
 }
 .form-section input[type="submit"]:hover {
   background-color: black;
@@ -239,6 +278,7 @@ footer {
 @media screen and (min-width: 2400px) {
   body {
     max-width: 2400px;
+    margin: auto;
   }
 }
 
