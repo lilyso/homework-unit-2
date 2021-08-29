@@ -229,7 +229,7 @@ textarea:focus {
   border-bottom: 5px solid var(--brightcolor);
 }
 
-.form-section input[type="submit"] {
+.form-section button {
   margin: 0 auto;
   display: block;
   border: 0;
@@ -237,7 +237,7 @@ textarea:focus {
   color: black;
   border-radius: 0;
 }
-.form-section input[type="submit"]:hover {
+.form-section button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
