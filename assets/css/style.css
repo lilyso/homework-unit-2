@@ -123,7 +123,7 @@ header h1 {
 }
 
 .portfolio {
-  background: white;
+    background-color: var(--brightcolor);
 }
 
 .project {
@@ -149,6 +149,9 @@ header h1 {
     color: var(--brightcolor);
 }
 
+.project:hover img {
+    opacity:0.8; 
+}
 .skills:hover .floating a .portfolio-text {
     background-color: black;
     color: var(--brightcolor);
@@ -156,10 +159,6 @@ header h1 {
 
 .skills:hover img {
     opacity:0.8; 
-}
-
-.skills { 
-    background-color: var(--brightcolor);
 }
 
 .creative {
