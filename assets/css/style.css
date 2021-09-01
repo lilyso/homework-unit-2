@@ -1,4 +1,4 @@
-/* Theme colour notes: colours below are used to compliment the black & white theme. --brightcolor is used to highlight h1 and h2 or accent certain sections for balance/aesthetics */
+/* Theme colour notes: Colours below are used to compliment the black & white theme. --brightcolor is used to highlight h1 and h2 or accent certain sections for balance/aesthetics */
 
 :root {
   --darkcolor: #424242;
@@ -15,26 +15,6 @@ body {
 
 img {
   display: block;
-}
-
-header {
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-}
-
-nav li a:hover {
-  background: var(--brightcolor);
-  color: black;
-}
-
-.intro-title {
-  margin: 20px;
-  padding: 5px;
-  border: 3px solid black;
-  text-align: center;
 }
 
 h2 {
@@ -61,14 +41,20 @@ header h1 {
   color: #fff;
 }
 
-/* Styles to highlight last name "So" */
+/* Start Navigation Styles */
 
-.text-highlight {
-  color: var(--brightcolor);
-  transition: all 2s ease-in-out;
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
 }
 
-/* Start Navigation Styles */
+nav li a:hover {
+  background: var(--brightcolor);
+  color: black;
+}
 
 .main-menu {
   list-style-type: none;
@@ -86,9 +72,23 @@ header h1 {
   color: #fff;
 }
 
+/* Styles to highlight last name "So" */
+
+.text-highlight {
+  color: var(--brightcolor);
+  transition: all 2s ease-in-out;
+}
+
 /* End Navigation Styles */
 
 /* Start Hero Section */
+
+.intro-title {
+  margin: 20px;
+  padding: 5px;
+  border: 3px solid black;
+  text-align: center;
+}
 
 .about-me {
   padding: 20px 20px 0px 20px;
@@ -159,6 +159,8 @@ header h1 {
   white-space: nowrap;
 }
 
+/* Start Portfolio Featured Work */
+
 .project:hover .floating a .portfolio-text {
   background-color: black;
   color: var(--brightcolor);
@@ -167,6 +169,8 @@ header h1 {
 .project:hover img {
   opacity: 0.8;
 }
+
+/* Start Portfolio Featured Work */
 
 .skills:hover .floating a .portfolio-text {
   background-color: black;
@@ -193,15 +197,6 @@ header h1 {
   max-width: 100%;
   height: auto;
   filter: grayscale(100%);
-}
-
-.skills a {
-  text-decoration: none;
-  color: black;
-}
-
-.skills a:hover {
-  background: black;
 }
 
 .floating {
@@ -233,8 +228,7 @@ textarea {
   width: 100%;
   outline: none;
   padding: 10px 0px 10px 0px;
-  margin: 5px 1px 3px 0px;
-  border-bottom: 5px solid var(--darkcolor);
+  border-bottom: 2px solid var(--darkcolor);
   border-left: 0px solid transparent;
   border-right: 0px solid transparent;
   border-top: 0px solid transparent;
@@ -243,7 +237,7 @@ textarea {
 
 .form-row input:focus,
 textarea:focus {
-  border-bottom: 5px solid var(--brightcolor);
+  border-bottom: 4px solid var(--brightcolor);
 }
 
 .form-section button {
@@ -252,7 +246,7 @@ textarea:focus {
   border: 0;
   background-color: var(--brightcolor);
   color: black;
-  border-radius: 0;
+  border-radius: 0px;
 }
 .form-section button:hover {
   background-color: black;
@@ -321,10 +315,9 @@ footer {
   header h1 {
     font-size: 18px;
   }
+
   .main-menu li a {
     padding: 5px 8px;
-    display: block;
-    text-decoration: none;
   }
 
   .creative {
