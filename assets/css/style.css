@@ -11,6 +11,7 @@
 body {
   background: var(--lightgrey);
   font-family: "Lato", sans-serif;
+  line-height: 120%;
 }
 
 img {
@@ -54,6 +55,7 @@ header {
 nav li a:hover {
   background: var(--brightcolor);
   color: black;
+  transition: 0.75s ease;
 }
 
 .main-menu {
@@ -164,10 +166,12 @@ nav li a:hover {
 .project:hover .floating a .portfolio-text {
   background-color: black;
   color: var(--brightcolor);
+  transition: 0.75s ease;
 }
 
 .project:hover img {
   opacity: 0.8;
+  transition: 0.75s ease;
 }
 
 /* Start Portfolio Featured Work */
@@ -175,10 +179,12 @@ nav li a:hover {
 .skills:hover .floating a .portfolio-text {
   background-color: black;
   color: var(--brightcolor);
+  transition: 0.75s ease;
 }
 
 .skills:hover img {
   opacity: 0.8;
+  transition: 0.75s ease;
 }
 
 .creative {
@@ -252,6 +258,7 @@ textarea:focus {
   background-color: black;
   color: white;
   cursor: pointer;
+  transition: 0.75s ease;
 }
 
 .form-row label {
@@ -314,6 +321,10 @@ footer {
 
   header h1 {
     font-size: 18px;
+  }
+
+  h2, h3 {
+    font-size: 75%;
   }
 
   .main-menu li a {
